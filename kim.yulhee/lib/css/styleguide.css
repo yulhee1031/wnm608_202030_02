@@ -65,6 +65,12 @@ a:hover {
   text-decoration: none;x
 }
 
+.image_div {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
+
 
 
 /* ATOMIC CLASSES */
@@ -126,6 +132,7 @@ a:hover {
 	.card.soft {
     	box-shadow: 4px 4px 10px 10px rgba(39,43,38,0.1);
 		border-radius:0.3em;
+		padding: 40px;
 	}
 
 	.card.medium {
