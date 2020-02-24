@@ -7,7 +7,8 @@
 :root {
     --color-neutral-dark: #333;
     --color-neutral-medium: #999;
-    --color-neutral-light: #f9f9f9;;
+    --color-neutral-light: #f9f9f9;
+
     --header-height:3rem;
 }
 
@@ -26,7 +27,6 @@ h6 {
 	font-family: 'Montserrat', sans-serif;
 }
 
-
 a {
 	color:inherit;
 	font-weight:bold;
@@ -40,6 +40,8 @@ a:hover {
 
 
 
+
+
 /* SMALL CLASSES */
 
 .container {
@@ -48,28 +50,7 @@ a:hover {
 	margin-left: auto;
 }
 
-.categories {
-	text-align: center;
-	padding: 20px 20px 10px 20px;
-	width: 100%;
-}
-.footer {
-  width: 100%;
-  height: auto;
-  color: white;
-  background-color: #212121;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 200px;
-  padding: 30px 30px 30px 30px;
-  text-decoration: none;x
-}
 
-.image_div {
-	width: 100px;
-	height: 100px;
-	margin: auto;
-}
 
 
 
@@ -89,13 +70,13 @@ a:hover {
 
 
 
+
 /* COMPONENT CLASSES */
 
 .navbar {
 	background-color:var(--color-neutral-dark);
 	color:var(--color-neutral-light);
 	line-height: var(--header-height);
-	padding: 20px 0px 20px 0px;
 }
 .navbar h1 {
 	margin:0;
@@ -132,9 +113,12 @@ a:hover {
 	.card.soft {
     	box-shadow: 4px 4px 10px 10px rgba(39,43,38,0.1);
 		border-radius:0.3em;
-		padding: 40px;
 	}
 
+	.card.dark {
+		background-color:var(--color-neutral-dark);
+		color:var(--color-neutral-light);
+	}
 	.card.medium {
 		background-color:var(--color-neutral-medium);
 	}
@@ -142,6 +126,8 @@ a:hover {
 	.card.flat {
 		padding:0;
 	}
+
+
 
 
 
@@ -153,5 +139,5 @@ a:hover {
 	overflow:hidden;
 	background-size:cover;
 	background-position:center;
+	background-attachment: fixed;
 }
-

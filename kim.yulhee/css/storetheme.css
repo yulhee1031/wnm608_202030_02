@@ -1,0 +1,22 @@
+.categories {
+	text-align: center;
+	padding: 20px 20px 10px 20px;
+	width: 100%;
+}
+.footer {
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: #212121;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 200px;
+  padding: 30px 30px 30px 30px;
+  text-decoration: none;x
+}
+
+.image_div {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+}
