@@ -5,17 +5,17 @@
 }
 
 :root {
-    --color-neutral-dark: #333;
-    --color-neutral-medium: #999;
-    --color-neutral-light: #f9f9f9;
+    --color-neutral-dark: #fad978;
+    --color-neutral-light: #1c1c1c;
 
-    --header-height:3rem;
+    --header-height:5rem;
 }
 
 body {
 	margin:0;
 	font-size:100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
+
 }
 
 h1,
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 a {
