@@ -5,32 +5,11 @@
 	<meta charset="UTF-8">
 	<title>Landing Page</title>
 
-	<!-- meta:vp -->
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-
-	<link rel="stylesheet" href="lib/css/gridsystem.css">
-	<link rel="stylesheet" href="lib/css/styleguide.css">
-	<link rel="stylesheet" href="css/storetheme.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<?php include "parts/meta.php" ?>
 </head>
 <body>
 	
-	<!-- header.navbar>h1+nav.nav -->
-	<header class="navbar">
-		<div class="container display-flex">
-			<div class="flex-stretch">
-				<h1>Logo</h1>
-			</div>
-			<nav class="nav flex-none">
-				<!-- ul>li*3>a[href=#]>{Link $} -->
-				<ul class="display-flex">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Cart</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="view-window" style="background-image:url(img/main_img.jpg)"></div>
 
@@ -42,7 +21,7 @@
 		<div class="grid gap">
 			<div class="col-lg-4 col-xs-12">
 				<figure class="product-figure overlay">
-					<img src="img/stuffed_animal_1.JPG" alt="">
+					<img src="img/stuffed_animal_1.JPG" alt="doll">
 					<figcaption>
 						Product
 					</figcaption>
@@ -50,7 +29,7 @@
 			</div>
 			<div class="col-lg-4 col-xs-12">
 				<figure class="product-figure overlay">
-					<img src="img/stuffed_animal_2.JPG" alt="">
+					<img src="img/stuffed_animal_2.JPG" alt="doll">
 					<figcaption>
 						Product
 					</figcaption>
@@ -58,7 +37,7 @@
 			</div>
 			<div class="col-lg-4 col-xs-12">
 				<figure class="product-figure overlay">
-					<img src="img/stuffed_animal_3.JPG" alt="">
+					<img src="img/stuffed_animal_3.JPG" alt="doll">
 					<figcaption>
 						Product
 					</figcaption>
@@ -71,7 +50,7 @@
 		<div class="grid gap">
 			<div class="col-lg-4 col-xs-12">
 				<figure class="product-figure overlay">
-					<img src="img/stuffed_animal_4.JPG" alt="">
+					<img src="img/stuffed_animal_4.JPG" alt="doll">
 					<figcaption>
 						Product
 					</figcaption>
@@ -79,7 +58,7 @@
 			</div>
 			<div class="col-lg-4 col-xs-12">
 				<figure class="product-figure overlay">
-					<img src="img/stuffed_animal_5.JPG" alt="">
+					<img src="img/stuffed_animal_5.JPG" alt="doll">
 					<figcaption>
 						Product
 					</figcaption>
@@ -87,7 +66,7 @@
 			</div>
 			<div class="col-lg-4 col-xs-12">
 				<figure class="product-figure overlay">
-					<img src="img/stuffed_animal_6.JPG" alt="">
+					<img src="img/stuffed_animal_6.JPG" alt="doll">
 					<figcaption>
 						Product
 					</figcaption>

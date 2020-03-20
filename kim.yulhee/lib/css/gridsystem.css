@@ -10,6 +10,7 @@
 .grid.gap {
 	grid-gap:var(--gap-size);
 	gap:var(--gap-size);
+	padding-bottom: 50px;
 }
 
 .col-1 { grid-column: span 1; }
