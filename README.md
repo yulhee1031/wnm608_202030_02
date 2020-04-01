@@ -6,7 +6,7 @@ WNM 608 2020 Spring 02
 ## Links
 
 - http://coding.yulheekim.com
-- http://coding.yulheekim.com/aau/wnm608/kim.yulhee/index.html
+- http://coding.yulheekim.com/aau/wnm608/kim.yulhee/index.php
 - http://coding.yulheekim.com/aau/wnm608/kim.yulhee/recipes/index.html
 - http://coding.yulheekim.com/aau/wnm608/kim.yulhee/styleguide/index.html
 
