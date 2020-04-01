@@ -17,44 +17,184 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-
-
-
-<header class="navbar">
-	<div class="container display-flex">
-		<div class="flex-stretch">
-			<h1>Store</h1>
-		</div>
-		<nav class="nav flex-none">
-			<ul class="display-flex">
-				<!-- li*3>a[href=#]>{Link $} -->
-				<li><a href="index.php">Home</a></li>
-				<li><a href="product_list.php">Store</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-		</nav>
-	</div>
-</header>
+	<?php include "parts/navbar.php" ?>
 
 	<div class="container">
-		<div class="card soft">
-			<h2>Product List</h2>
-
-			<!-- ul>li*10>a[href="#$"]>{Product $} -->
-			<ul>
-				<li><a href="product_item.php?id=1">Product 1</a></li>
-				<li><a href="product_item.php?id=2">Product 2</a></li>
-				<li><a href="product_item.php?id=3">Product 3</a></li>
-				<li><a href="product_item.php?id=4">Product 4</a></li>
-				<li><a href="product_item.php?id=5">Product 5</a></li>
-				<li><a href="product_item.php?id=6">Product 6</a></li>
-				<li><a href="product_item.php?id=7">Product 7</a></li>
-				<li><a href="product_item.php?id=8">Product 8</a></li>
-				<li><a href="product_item.php?id=9">Product 9</a></li>
-				<li><a href="product_item.php?id=10">Product 10</a></li>
-			</ul>
+		<div class="texts">
+			<h2>Our Products</h2>
+			<h4>Conditions of all products are very good. We only sell the products that have good condition.<br>Before selling, products are washed and sterilized.</h4>
+		</div>
+		<div class="container">
+			<div class="grid gap">
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_1">
+								<img src="img/stuffed_animal_1.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Brown Teddy Bear</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_2">
+								<img src="img/stuffed_animal_2.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Cute White Sheep</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_3">
+								<img src="img/stuffed_animal_3.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>My First Puppy</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="grid gap">
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_4">
+								<img src="img/stuffed_animal_4.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Gray Small Rabbit </div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_5">
+								<img src="img/stuffed_animal_5.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Kakao Friends Doggie </div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_6">
+								<img src="img/stuffed_animal_6.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>My First Bear</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="grid gap">
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+						<a href="product_item.php?id=stuffed_animal_7">
+								<img src="img/stuffed_animal_7.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>California Bear</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_8">
+								<img src="img/stuffed_animal_8.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Minions</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_9">
+								<img src="img/stuffed_animal_9.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Rainbow Puppy</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
+			<div class="grid gap">
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_10">
+								<img src="img/stuffed_animal_10.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Mini Mouse</div>
+								<div>$700</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_11">
+								<img src="img/stuffed_animal_11.JPG" alt="doll">
+							</a>.
+							<figcaption>
+								<div>Mario & Friends</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="col-lg-4 col-xs-12">
+					<div class="card">
+						<figure class="product-figure">
+							<a href="product_item.php?id=stuffed_animal_12">
+								<img src="img/stuffed_animal_12.JPG" alt="doll">
+							</a>
+							<figcaption>
+								<div>Cute Doll</div>
+								<div>$7.00</div>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	
+	<div class="footer">
+   		<h3>©2020 Yulhee Kim All Rights Reserved</h3>
+ 	</div>
+
 </body>
 </html>

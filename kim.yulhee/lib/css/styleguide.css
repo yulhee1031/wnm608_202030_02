@@ -62,7 +62,9 @@ code {
 
 .hidden { display:none; }
 
-
+.texts {text-align: center;
+		padding-top: 30px;
+		padding-bottom: 30px;}
 
 
 /* ATOMIC CLASSES */
@@ -223,7 +225,6 @@ code {
 	overflow:hidden;
 	background-size:cover;
 	background-position:center;
-	background-attachment: fixed;
 }
 
 
