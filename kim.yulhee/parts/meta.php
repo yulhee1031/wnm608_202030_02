@@ -1,6 +1,8 @@
 <meta charset="UTF-8">
 
 	<meta name="viewport" content="width=device-width">
+
+	<base href="/aau/wnm608/kim.yulhee/">
 	
 	<link rel="stylesheet" href="lib/css/gridsystem.css">
 	<link rel="stylesheet" href="lib/css/styleguide.css">
