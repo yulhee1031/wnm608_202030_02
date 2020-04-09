@@ -7,7 +7,7 @@ $users = getData("../data/users.json");
 
 
 
-function showUserPage($user) {
+function showUserPage($id, $user) {
 $classes = implode(", ",$user->classes);
 echo <<<HTML
 <div>
@@ -27,6 +27,30 @@ echo <<<HTML
 		<strong>Classes</strong>
 		<span>$classes</span>
 	</div>
+	<div>
+		<a href="admin/users.php?id=$id&edit=true">Edit</a>
+	</div>
+</div>
+HTML;
+}
+
+function showUserEditPage($id, $user) {
+$classes = implode(", ",$user->classes);
+echo <<<HTML
+<div>
+	<a href="admin/users.php?id=$id&edit=false">Back</a>
+</div>
+<div>
+	<h2>$user->name</h2>
+	<form action="" class="form form-control" method="post">
+		<label for="type">Type</label>
+		<input class="form-basic" type="text" id="type" name="type" value=$user->type>
+		<label for="email">Email</label>
+		<input class="form-basic" type="text" id="email" name="email" value=$user->email>
+		<label for="classes">Classes</label>
+		<input class="form-basic" type="text" id="classes" name="classes" value=$classes>
+		<input class="form-basic-button" type="submit" name="submit" value="submit">
+	</form>
 </div>
 HTML;
 }
@@ -40,12 +64,15 @@ HTML;
 
 	<?php include "../parts/meta.php" ?>
 </head>
+
+
 <body>
 
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-				<h1>User Admin</h1>
+				<img src="img/logo.png" alt="logo" width="50px" style="padding-top: 20px;">
+				<h4 style="display: inline-block; padding-bottom:0px; margin-bottom:0px;">User Admin</h4>
 			</div>
 			<nav class="nav flex-none">
 				<ul class="display-flex">
@@ -60,12 +87,19 @@ HTML;
 
 			<?php
 
-			if(isset($_GET['id'])) {
+			if(isset($_GET['edit'])) {
 
-				showUserPage($users[$_GET['id']]);
+				if ($_GET['edit'] == 'true') {
+
+					showUserEditPage($_GET['id'], $users[$_GET['id']]);
+
+				} else {
+
+					showUserPage($_GET['id'], $users[$_GET['id']]);
+
+				}
 
 			} else {
-
 
 			?>
 
@@ -76,7 +110,7 @@ HTML;
 
 			foreach($users as $i=>$user) {
 				echo "<li>
-					<a href='admin/users.php?id=$i'>$user->name</a>
+					<a href='admin/users.php?id=$i&edit=false'>$user->name</a>
 				</li>";
 			}
 
