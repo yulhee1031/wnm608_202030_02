@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 09, 2020 at 07:37 PM
+-- Generation Time: Apr 09, 2020 at 07:47 PM
 -- Server version: 5.6.41-84.1
 -- PHP Version: 7.2.7
 
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `test`
+-- Table structure for table `products`
 --
 
-CREATE TABLE `test` (
+CREATE TABLE `products` (
   `id` int(13) NOT NULL,
   `name` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
@@ -43,10 +43,10 @@ CREATE TABLE `test` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `test`
+-- Dumping data for table `products`
 --
 
-INSERT INTO `test` (`id`, `name`, `email`, `url`, `price`, `category`, `date_create`, `date_modify`, `description`, `thumbnail`, `images`) VALUES
+INSERT INTO `products` (`id`, `name`, `email`, `url`, `price`, `category`, `date_create`, `date_modify`, `description`, `thumbnail`, `images`) VALUES
 (1, 'Brown Teddy Bear', '', 'http://coding.yulheekim.com/aau/wnm608/kim.yulhee/index.php', '7.00', 'stuffed animal', '2020-04-09 19:01:17', '2020-04-09 19:01:17', 'This is cute teddy bear. We bought this from IKEA. As you see, condition is really good and clean.', 'images/stuffed_animal_1_thumbnail.jpg', 'images/stuffed_animal_1.jpg'),
 (2, 'Cute White Sheep', '', 'http://coding.yulheekim.com/aau/wnm608/kim.yulhee/index.php', '7.00', 'stuffed animal', '2020-04-09 19:04:15', '2020-04-09 19:04:15', 'This is little stuffed animal from Pottery barn kids. This is super famous for babies.', 'images/stuffed_animal_2_thumbnail.jpg', 'images/stuffed_animal_2.jpg'),
 (3, 'My First Puppy', '', 'http://coding.yulheekim.com/aau/wnm608/kim.yulhee/index.php', '7.00', 'stuffed animal', '2020-04-09 19:26:34', '2020-04-09 19:26:34', 'Condition is good.', 'images/stuffed_animal_3_thumbnail.jpg', 'images/stuffed_animal_3.jpg'),
@@ -66,9 +66,9 @@ INSERT INTO `test` (`id`, `name`, `email`, `url`, `price`, `category`, `date_cre
 --
 
 --
--- Indexes for table `test`
+-- Indexes for table `products`
 --
-ALTER TABLE `test`
+ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -76,9 +76,9 @@ ALTER TABLE `test`
 --
 
 --
--- AUTO_INCREMENT for table `test`
+-- AUTO_INCREMENT for table `products`
 --
-ALTER TABLE `test`
+ALTER TABLE `products`
   MODIFY `id` int(13) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
