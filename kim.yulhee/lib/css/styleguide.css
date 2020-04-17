@@ -23,6 +23,10 @@ body {
     background-color:#f5f5f5;
 }
 
+.product-description{
+	color: #000000;
+}
+
 h1,
 h2,
 h3,
@@ -30,6 +34,7 @@ h4,
 h5,
 h6 {
 	font-family: 'Poppins', sans-serif;
+	color: #000000;
 }
 
 a {
