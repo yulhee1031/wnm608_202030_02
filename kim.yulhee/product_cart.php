@@ -61,9 +61,5 @@ $result = getRows(
 		</div>
 	</div>
 	
-	<div class="footer">
-   		<h3>©2020 Yulhee Kim All Rights Reserved</h3>
- 	</div>
-
 </body>
 </html>

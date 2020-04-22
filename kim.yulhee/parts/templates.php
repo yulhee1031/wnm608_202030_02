@@ -4,10 +4,10 @@
 function productListTemplate($r,$o) {
 return $r.<<<HTML
 <div class="col-xs-6 col-md-4">
-	<a href="product_item.php?id=$o->id" class="display-block">
+	<a href="product_item.php?id=$o->id" class="thumbnail">
 		<figure class="product-figure soft">
 			<div class="product-image">
-				<img src="/images/store/$o->thumbnail" alt="">
+				<img src="img/$o->thumbnail" alt="">
 			</div>
 			<figcaption class="product-description">
 				<div class="product-price">&dollar;$o->price</div>
@@ -26,7 +26,7 @@ $amount = rand(1,5);
 return $r.<<<HTML
 <div class="display-flex">
 	<div class="flex-none product-thumbs">
-		<img src="/images/store/$o->thumbnail">
+		<img src="img/$o->thumbnail">
 	</div>
 	<div class="flex-stretch">
 		<div class="display-flex">

@@ -28,9 +28,11 @@ $result = getRows(
 
 	<div class="container">
 		<div class="card soft">
-			<h4><p>Welcome to Dona Land!</p>
-			Our products have good conditions. We always sterilize and send the product before shipping it.</h4>
-			<h2>Product List</h2>
+			<div class="product_list_title">
+				<h2>Product List</h2>
+				Welcome to Dona Land!<br>
+				Our products have good conditions. We always sterilize and send the product before shipping it.<p>
+			</div>
 			<div class="grid gap">
 			<?php
 

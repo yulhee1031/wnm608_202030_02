@@ -21,7 +21,7 @@
 			<div class="col-lg-4 col-xs-12">
 				<div class="card">
 					<figure class="product-figure">
-						<a href="product_item.php?id=stuffed_animal_1">
+						<a href="product_item.php?id=1">
 							<img src="img/stuffed_animal_1.JPG" alt="doll">
 						</a>
 						<figcaption>
@@ -34,7 +34,7 @@
 			<div class="col-lg-4 col-xs-12">
 				<div class="card">
 					<figure class="product-figure">
-						<a href="product_item.php?id=stuffed_animal_2">
+						<a href="product_item.php?id=2">
 							<img src="img/stuffed_animal_2.JPG" alt="doll">
 						</a>
 						<figcaption>
@@ -47,7 +47,7 @@
 			<div class="col-lg-4 col-xs-12">
 				<div class="card">
 					<figure class="product-figure">
-						<a href="product_item.php?id=stuffed_animal_3">
+						<a href="product_item.php?id=3">
 							<img src="img/stuffed_animal_3.JPG" alt="doll">
 						</a>
 						<figcaption>

@@ -39,13 +39,13 @@ $thumbs = explode(",", $o->images);
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
 					<div class="product-main">
-						<img src="/images/store/<?= $o->thumbnail ?>" alt="">
+						<img src="img/<?= $o->thumbnail ?>" alt="">
 					</div>
 					<div class="product-thumbs">
 					<?php
 
 					echo array_reduce($thumbs,function($r,$o){
-						return $r."<img src='/images/$o'>";
+						return $r."<img src='img/$o'>";
 					})
 
 					?>

@@ -37,6 +37,10 @@ h6 {
 	color: #000000;
 }
 
+.product_list_title {
+  text-align: center;
+}
+
 a {
 	color:inherit;
 	font-weight:bold;

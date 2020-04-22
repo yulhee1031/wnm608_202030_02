@@ -64,11 +64,14 @@
   object-fit:cover;
 }
 
-
 @media (max-width:1000px) {
   .navbar .display-flex {
     display:block;
   }
+}
+
+.header {
+  padding-top:17px;
 }
 
 .categories {
@@ -87,6 +90,12 @@
   padding: 30px 30px 30px 30px;
   text-decoration: none;x
 }
+
+.thumbnail {
+  display: block;
+  padding: 10px;
+}
+
 
 .image_div {
 	width: 100px;
