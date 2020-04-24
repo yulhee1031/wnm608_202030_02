@@ -3,13 +3,8 @@
 include_once "lib/php/functions.php";
 include_once "parts/templates.php";
 
-$result = getRows(
-	makeConn(),
-	"SELECT *
-	FROM `products`
-	WHERE `id` IN (2,5,8)
-	"
-);
+
+$result = getCartItems();
 
 // print_p($result);
 
@@ -34,28 +29,18 @@ $result = getRows(
 
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-8">
-				<div class="card">
+				<div class="card flat">
 				<?php
 				echo array_reduce($result,'cartListTemplate');
 				?>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-4">
-				<div class="card">
-					<h2>Totals</h2>
-					<div>
-						<strong>Products</strong>
-						<span>$13</span>
+				<div class="card flat">
+					<?= cartTotals(); ?>
+					<div class="card-section">
+						<a href="product_checkout.php" class="form-button">Checkout</a>
 					</div>
-					<div>
-						<strong>Tax</strong>
-						<span>$13</span>
-					</div>
-					<div>
-						<strong>Total</strong>
-						<span>$13</span>
-					</div>
-					<div><a href="product_checkout.php" class="form-button">Checkout</a></div>
 				</div>
 			</div>
 		</div>

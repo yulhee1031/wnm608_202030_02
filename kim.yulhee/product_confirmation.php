@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+include_once "lib/php/functions.php";
+$_SESSION['cart'] = [];
+?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>Store: Purchase Confirmation</title>

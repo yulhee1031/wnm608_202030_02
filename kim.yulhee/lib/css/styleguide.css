@@ -41,6 +41,10 @@ h6 {
   text-align: center;
 }
 
+.texts{
+	text-align: center;
+}
+
 a {
 	color:inherit;
 	font-weight:bold;
@@ -71,9 +75,7 @@ code {
 
 .hidden { display:none; }
 
-.texts {text-align: center;
-		padding-top: 30px;
-		padding-bottom: 30px;}
+
 
 
 /* ATOMIC CLASSES */
@@ -97,7 +99,6 @@ code {
 
 .navbar {
 	background-color:var(--color-neutral-dark);
-	color: black;
 	line-height: var(--header-height);
 }
 .navbar h1 {
@@ -221,6 +222,13 @@ code {
 	padding:0;
 }
 
+.card-section {
+	padding:1em;
+}
+.card-section+.card-section {
+	border-top:1px solid var(--color-neutral-light);
+}
+
 
 
 
@@ -233,6 +241,7 @@ code {
 	overflow:hidden;
 	background-size:cover;
 	background-position:center;
+	background-attachment: fixed;
 }
 
 
@@ -244,32 +253,32 @@ code {
 	width:100%;
 	border-collapse:collapse;
 }
-.table th,
-.table td {
-	padding: 0.5em;
-	text-align:left;
-}
+	.table th,
+	.table td {
+		padding: 0.5em;
+		text-align:left;
+	}
 
-.table.striped tbody tr:nth-child(odd) {
-	background-color:var(--color-neutral-light);
-}
+	.table.striped tbody tr:nth-child(odd) {
+		background-color:var(--color-neutral-light);
+	}
 
-.table.lined.all tbody tr,
-.table.lined.horizontal tbody tr {
-	border-top:1px solid var(--color-neutral-light);
-}
+	.table.lined.all tbody tr,
+	.table.lined.horizontal tbody tr {
+		border-top:1px solid var(--color-neutral-light);
+	}
 
-.table.lined.all th:not(:first-child),
-.table.lined.all td:not(:first-child),
-.table.lined.vertical th:not(:first-child),
-.table.lined.vertical td:not(:first-child) {
-	border-left:1px solid var(--color-neutral-light);
-}
+	.table.lined.all th:not(:first-child),
+	.table.lined.all td:not(:first-child),
+	.table.lined.vertical th:not(:first-child),
+	.table.lined.vertical td:not(:first-child) {
+		border-left:1px solid var(--color-neutral-light);
+	}
 
-.table.lined.all,
-.table.lined.outline {
-	border:1px solid var(--color-neutral-light);
-}
+	.table.lined.all,
+	.table.lined.outline {
+		border:1px solid var(--color-neutral-light);
+	}
 
 
 
@@ -279,6 +288,7 @@ code {
 
 
 /* FORMS */
+
 .form-control {
     margin: 1em 0;
 }
@@ -315,6 +325,7 @@ code {
     cursor: pointer;
     text-decoration: none;
     outline:0;
+    -webkit-appearance: none;
 }
 .form-button:hover {
     text-decoration: none;

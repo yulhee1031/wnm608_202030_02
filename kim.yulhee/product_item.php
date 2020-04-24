@@ -53,16 +53,33 @@ $thumbs = explode(",", $o->images);
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-5">
-				<div class="card soft">
-					<h2><?= $o->name ?></h2>
-					<div class="product-description">
-						<div class="product-price">&dollar;<?= $o->price ?></div>
+				<form class="card soft flat" method="get" action="data/form_actions.php">
+					<div class="card-section">
+						<h2><?= $o->name ?></h2>
+						<div class="product-description">
+							<div class="product-price">&dollar;<?= $o->price ?></div>
+						</div>
 					</div>
 
-					<div>
-						<a href="product_added_to_cart.php" class="form-button">Add To Cart</a>
+					<div class="card-section">
+						<label class="form-label">Amount</label>
+						<select name="amount" class="form-button">
+							<!-- option*10>{$} -->
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
 					</div>
-				</div>
+
+					<div class="card-section">
+						<input type="hidden" name="action" value="add-to-cart">
+						<input type="hidden" name="id" value="<?= $o->id ?>">
+						<input type="hidden" name="price" value="<?= $o->price ?>">
+						<input type="submit" class="form-button" value="Add To Cart">
+					</div>
+				</form>
 			</div>
 		</div>
 
@@ -73,6 +90,9 @@ $thumbs = explode(",", $o->images);
 			</div>
 		</div>
 	</div>
+	
+</body>
+</html>
 
 <div class="footer">
    		<h3>©2020 Yulhee Kim All Rights Reserved</h3>
