@@ -109,6 +109,24 @@
 }
 
 
+.filter-bar {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.filter-item {
+  padding: 0px 20px;
+}
+
+.filter-button {
+  background-color: white;
+  font-size: 13px;
+}
+
+.filter-text {
+  margin: 0px;
+  font-size: 12px;
+}
 
 
 
