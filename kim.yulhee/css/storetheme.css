@@ -69,6 +69,24 @@
   object-fit:cover;
 }
 
+
+.image-square img {
+  width:5em;
+  height:5em;
+  object-fit:contain;
+  object-position:center;
+}
+
+.itemlist-item {
+  margin:1em;
+  padding:1em;
+  border: 1px solid var(--color-neutral-light);
+  border-radius:0.5em;
+}
+
+
+
+
 @media (max-width:1000px) {
   .navbar .display-flex {
     display:block;

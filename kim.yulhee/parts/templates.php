@@ -28,7 +28,7 @@ $selectAmount = selectAmount($o->amount);
 return $r.<<<HTML
 <div class="display-flex card-section">
 	<div class="flex-none product-thumbs">
-		<img src="img/$o->thumbnail">
+		a
 	</div>
 	<div class="flex-stretch">
 		<div class="display-flex">
@@ -121,4 +121,26 @@ function makeCartBadge() {
 	if(!isset($_SESSION['cart']) || empty($_SESSION['cart'])) {
 		return "";
 	} else return "(".array_reduce($_SESSION['cart'],function($r,$o){ return $r + $o->amount; },0).")";
+}
+
+
+
+function makeListItemTemplate($r,$o) {
+return $r.<<<HTML
+<div class="itemlist-item display-flex">
+	<div class="flex-none">
+		<div class="image-square">
+			<img src="img/$o->thumbnail">
+		</div>
+	</div>
+	<div class="flex-stretch">
+		<div><strong>$o->title</strong></div>
+		<div><span>$o->category</span></div>
+	</div>
+	<div class="flex-none display-flex">
+		<div><a href="admin/?id=$o->id" class="form-button">Edit</a></div>
+		<div><a href="product_item.php?id=$o->id" class="form-button">Visit</a></div>
+	</div>
+</div>
+HTML;
 }
