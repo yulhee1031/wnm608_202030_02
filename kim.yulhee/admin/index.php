@@ -9,8 +9,7 @@ $empty_product = (object) [
 	"category"=>"",
 	"description"=>"",
 	"thumbnail"=>"",
-	"images"=>"",
-	"quantity"=>""
+	"images"=>""
 ];
 
 
@@ -26,13 +25,12 @@ switch(@$_GET['action']) {
 		$statement = $conn->prepare("UPDATE
 		`products`
 		SET
-			`title`=?,
+			`name`=?,
 			`price`=?,
 			`category`=?,
 			`description`=?,
 			`thumbnail`=?,
 			`images`=?,
-			`quantity`=?,
 			`date_modify`=NOW()
 		WHERE `id`=?
 		");
@@ -43,7 +41,6 @@ switch(@$_GET['action']) {
 			$_POST["product-description"],
 			$_POST["product-thumbnail"],
 			$_POST["product-images"],
-			$_POST["product-quantity"],
 			$_GET['id']
 		]);
 
@@ -59,12 +56,11 @@ switch(@$_GET['action']) {
 			`description`,
 			`thumbnail`,
 			`images`,
-			`quantity`,
 			`date_create`,
 			`date_modify`
 		)
 		VALUES
-		(?,?,?,?,?,?,?,NOW(),NOW())
+		(?,?,?,?,?,?,NOW(),NOW())
 		");
 		$statement->execute([
 			$_POST["product-name"],
@@ -72,8 +68,7 @@ switch(@$_GET['action']) {
 			$_POST["product-category"],
 			$_POST["product-description"],
 			$_POST["product-thumbnail"],
-			$_POST["product-images"],
-			$_POST["product-quantity"]
+			$_POST["product-images"]
 		]);
 		$id = $conn->lastInsertId();
 
@@ -128,10 +123,6 @@ $data_show = $id=='new' ? "" : <<<HTML
 	<strong>Description</strong>
 	<div>$o->description</div>
 </div>
-<div>
-	<strong>Quantity</strong>
-	<span>$o->quantity</span>
-</div>
 </div>
 HTML;
 
@@ -175,10 +166,6 @@ echo <<<HTML
 		<div class="form-control">
 			<label for="product-images" class="form-label">Images</label>
 			<input type="text" class="form-input" placeholder="A Product Images" id="product-images" name="product-images" value="$o->images">
-		</div>
-		<div class="form-control">
-			<label for="product-quantity" class="form-label">Quantity</label>
-			<input type="text" class="form-input" placeholder="A Product Quantity" id="product-quantity" name="product-quantity" value="$o->quantity">
 		</div>
 		<div class="form-control">
 			<input type="submit" value="Submit" class="form-button">
