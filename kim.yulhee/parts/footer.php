@@ -4,6 +4,7 @@
 		<div class="col-lg-4 col-xs-12">
 			<div class="footer-text">
 				<h2>CS CENTER</h2>
+				+1 650-123-5634<br>
 				Mon - Fri 9:00 am - 6:00 pm<br>
 				Sat & Sun : OFF<br>
 			</div>
