@@ -191,7 +191,8 @@ HTML;
 	<header class="navbar">
 		<div class="container display-flex">
 			<div class="flex-stretch">
-				<h1>Product Admin</h1>
+				<img src="img/logo.png" alt="logo" width="50px" style="padding-top: 20px;">
+				<h1 class="logo-text">Product Admin</h1>
 			</div>
 			<nav class="nav flex-none">
 				<ul class="display-flex">
@@ -222,7 +223,7 @@ HTML;
 
 		?>
 		<div class="card soft">
-		<h2>User List</h2>
+		<h2>Product List</h2>
 
 		<div class="itemlist">
 		<?php

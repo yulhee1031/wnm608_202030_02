@@ -38,6 +38,8 @@ h6 {
 	color: #000000;
 }
 
+
+
 .product_list_title {
   text-align: center;
 }
@@ -68,6 +70,50 @@ code {
 }
 
 
+.main-photo {
+	padding:1em;
+	overflow:hidden;
+	position:relative;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.product-main {
+  background-color:#fad978;
+  margin: 10px;
+}
+
+.product-main figcaption {
+  padding:1em;
+  background-color:#fad978;
+}
+
+.image-square {
+	margin: 0 20px 0 0;
+}
+
+.logo-text {
+	display: inline-block;
+}
+
+.button-wrapper {
+	padding: 0 5px;
+}
+
+.user-list {
+	padding: 5px 0;
+}
+
+.footer-text {
+	text-align: left;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.footer-content {
+	width: 70%;
+	margin-left:15%;
+}
 
 /* SMALL CLASSES */
 
@@ -78,7 +124,6 @@ code {
 }
 
 .hidden { display:none; }
-
 
 
 

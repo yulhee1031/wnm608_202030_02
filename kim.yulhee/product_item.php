@@ -38,17 +38,8 @@ $thumbs = explode(",", $o->images);
 		<div class="grid gap">
 			<div class="col-xs-12 col-md-7">
 				<div class="card soft">
-					<div class="product-main">
+					<div class="product-item">
 						<img src="img/<?= $o->thumbnail ?>" alt="">
-					</div>
-					<div class="product-thumbs">
-					<?php
-
-					echo array_reduce($thumbs,function($r,$o){
-						return $r."<img src='img/$o'>";
-					})
-
-					?>
 					</div>
 				</div>
 			</div>
@@ -90,13 +81,8 @@ $thumbs = explode(",", $o->images);
 			</div>
 		</div>
 	</div>
+
+	<?php include "parts/footer.php" ?>
 	
-</body>
-</html>
-
-<div class="footer">
-   		<h3>©2020 Yulhee Kim All Rights Reserved</h3>
- 	</div>
-
 </body>
 </html>

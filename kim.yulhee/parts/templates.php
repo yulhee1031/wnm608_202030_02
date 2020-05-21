@@ -134,12 +134,12 @@ return $r.<<<HTML
 		</div>
 	</div>
 	<div class="flex-stretch">
-		<div><strong>$o->title</strong></div>
+		<div><strong>$o->name</strong></div>
 		<div><span>$o->category</span></div>
 	</div>
 	<div class="flex-none display-flex">
-		<div><a href="admin/?id=$o->id" class="form-button">Edit</a></div>
-		<div><a href="product_item.php?id=$o->id" class="form-button">Visit</a></div>
+		<div class="button-wrapper"><a href="admin/?id=$o->id" class="form-button">Edit</a></div>
+		<div class="button-wrapper"><a href="product_item.php?id=$o->id" class="form-button">Visit</a></div>
 	</div>
 </div>
 HTML;

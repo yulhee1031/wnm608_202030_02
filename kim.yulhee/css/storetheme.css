@@ -57,15 +57,15 @@
   transform:scale(1.4,1.4);
 }
 
-
 .product-main img {
   width:100%;
   height:40vh;
   object-fit:cover;
 }
-.product-thumbs img {
-  height:75px;
-  width:100px;
+
+.product-item img {
+  width:100%;
+  height:60vh;
   object-fit:cover;
 }
 
@@ -109,9 +109,10 @@
   background-color: #fad978;
   text-align: center;
   font-size: 14px;
-  margin-top: 200px;
-  padding: 30px 30px 30px 30px;
-  text-decoration: none;x
+  margin-top: 50px;
+  padding: 0px 30px;
+  padding-bottom: 10px;
+  text-decoration: none;
 }
 
 .thumbnail {
@@ -138,6 +139,11 @@
 
 .filter-button {
   background-color: white;
+  font-size: 13px;
+}
+
+.filter-button select {
+  background-color: #fad978;
   font-size: 13px;
 }
 

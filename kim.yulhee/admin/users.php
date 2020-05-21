@@ -146,7 +146,7 @@ HTML;
 		<div class="container display-flex">
 			<div class="flex-stretch">
 				<img src="img/logo.png" alt="logo" width="50px" style="padding-top: 20px;">
-				<h1>User Admin</h1>
+				<h1 class="logo-text">User Admin</h1>
 			</div>
 			<nav class="nav flex-none">
 				<ul class="display-flex">
@@ -183,7 +183,7 @@ HTML;
 		<?php
 
 		foreach($users as $i=>$user) {
-			echo "<li>
+			echo "<li class='user-list'>
 				<a href='admin/users.php?id=$i'>$user->name</a>
 			</li>";
 		}

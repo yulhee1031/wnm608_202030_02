@@ -26,6 +26,8 @@ $_SESSION['cart'] = [];
 		
 		</div>
 	</div>
+
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>

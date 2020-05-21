@@ -43,6 +43,8 @@ $o = getRows(makeConn(),"SELECT * FROM `products` WHERE `id`={$_GET['id']}")[0];
 			</div>
 		</div>
 	</div>
+
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>

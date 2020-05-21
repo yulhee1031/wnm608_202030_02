@@ -54,9 +54,7 @@ include_once "lib/php/functions.php";
 		</div>
 	</div>
 
-	<div class="footer">
-   		<h3>©2020 Yulhee Kim All Rights Reserved</h3>
- 	</div>
+	<?php include "parts/footer.php" ?>
 	
 </body>
 </html>
