@@ -106,8 +106,7 @@ code {
 
 .footer-text {
 	text-align: left;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin: 0 20px;
 }
 
 .footer-content {

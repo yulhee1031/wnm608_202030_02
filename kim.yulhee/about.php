@@ -17,7 +17,7 @@
 						<img src="img/Aboutimage.jpeg" class="photo">
 					</div>
 					<div class="col-lg-6 col-sm-12">
-						<p>Welcome to DonaLand!<p>DonaLand is selling second hand stuffed animals. All products are clean and sterilized. <p> Our mission is to give joy for babies! We are donating our profits. We want to give our babies a better day than yesterday.
+						<p>Welcome to DonaLand!<p>DonaLand is selling second hand stuffed animals. All products are clean and sterilized. <p> Our mission is to give joy to babies! We are donating our profits. We want to give our babies a better day than yesterday.
 					</div>
 				</div>
 		</div>

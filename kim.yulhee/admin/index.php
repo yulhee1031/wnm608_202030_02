@@ -97,18 +97,12 @@ $addoredit = $id=='new' ? 'Add' : 'Edit';
 $createorupdate = $id=='new' ? 'create' : 'update';
 $deletebutton = $id=='new' ? "" : "<li class='flex-none'><a href='{$_SERVER['PHP_SELF']}?id=$id&action=delete'>Delete</a></li>";
 
-
-$images = array_reduce(explode(",",$o->images),function($r,$o){
-	return $r."<img src='img/$o'>";
-});
-
 $data_show = $id=='new' ? "" : <<<HTML
 <div class="card soft">
 
 <div class="product-main">
 	<img src="img/$o->thumbnail" alt="">
 </div>
-<div class="product-thumbs">$images</div>
 
 <h2>$o->name</h2>
 <div>
