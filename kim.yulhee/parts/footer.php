@@ -13,7 +13,8 @@
 			<div class="footer-text">
 				<h2>LINKS</h2>
 					<a href="about.php">About<br></a>
-					<a href="product_list.php">Store</a>
+					<a href="product_list.php">Store<br></a>
+					<a href="admin/index.php">Admin</a>
 			</div>
 		</div>
 		<div class="col-lg-4 col-xs-12">
